@@ -1,12 +1,12 @@
 import './Comp1.css';
-import Comp2  from '../component-2/Comp2';
+
 //craete test 1 component
-function Comp1(){
+function Comp1(props){
     //state 
     return(
         <div className="test-1">
             <h2>Test component 1</h2>
-            <Comp2/>
+            <h2>{props.data}</h2>
         </div>
         
         
