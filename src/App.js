@@ -1,6 +1,8 @@
 import './App.css';
-import img1 from './images/img-1.webp'
-import Comp1 from './components/component-1/Comp1';
+// import img1 from './images/img-1.webp'
+// import Comp1 from './components/component-1/Comp1';
+import Users from './components/users/users';
+
 function App() {
 //state
 // let students = [
@@ -18,9 +20,14 @@ function App() {
   // function test(a){
   //   console.log("value of a ",a)
   // }
+
+  //reusability state
+  // let a =10;
+  // let b =20;
+  // let c =30;
   return (
-    <div>
-      <h1 className='display-4 text-center bg-info text-light p-4'>Welcome to react page</h1>
+    <div className='text-center'>
+      <h1 className='display-4 bg-info text-light p-4'>Welcome to react page</h1>
       {/* table of students */}
       {/* <table className='table text-center table-hover'>
         <thead>
@@ -58,7 +65,12 @@ function App() {
       <button className="btn btn-warning" onClick={()=>test(12)}>click</button>    */}
       <div className='container'>
         {/* nest comp1 components */}
-        <Comp1/>
+        {/* <Comp1 data={a}/>
+        <Comp1 data={b}/>
+        <Comp1 data={c}/> */}
+
+        {/* nesting user components */}
+        <Users/>
       </div>
 
     </div>
